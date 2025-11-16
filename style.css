@@ -1,0 +1,53 @@
+body {
+    background-color: #e6dcdc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header {
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.line {
+    width: 300px;
+    height: 4px;
+    background: rgb(143, 143, 202);
+    margin: 10px auto 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Each image container uses flex-basis & flex-grow */
+.img-box {
+    flex-basis: 200px;     /* base width */
+    flex-grow: 1;          /* expand to fill space */
+    flex-shrink: 1;        /* shrink if needed */
+    display: flex;
+    justify-content: center;
+}
+
+.img-box img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
